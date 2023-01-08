@@ -436,7 +436,7 @@ const checkUser = async(userAddress) =>{
                       </thead>
                         <tbody>
                           {user.data.map((data) =>
-                            <tr>
+                            <tr key={Object.keys(data)[0]}>
                             <td>{Object.values(data)[0].address}</td>
                             <td>{Object.values(data)[1].address}</td>
                             <td>{Object.values(data)[4]}</td>
