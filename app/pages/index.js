@@ -64,6 +64,7 @@ async function initWallet(){
         chainId: "0x13881",
         rpcTarget: url, // This is the mainnet RPC we have added, please pass on your own endpoint while creating an app
       },
+      web3AuthNetwork:"testnet"
     });
 
     await web3auth.initModal();
